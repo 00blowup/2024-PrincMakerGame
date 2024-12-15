@@ -104,7 +104,7 @@ export default function App() {
     return (
         <View style = {styles.container}>
             <View style = {{ height: 100}}>
-                <Text style = {{ textAlign: 'center', fontSize: 60, fontWeight: 'bold' }}>조용한 소년</Text>
+                <Text style = {{ textAlign: 'center', fontSize: 60, fontWeight: 'bold' }}>영리한 소년</Text>
             </View>
             <View style = {{ height: 100, width: 300}}>
                 <Text style = {{ textAlign: 'center', fontWeight: 'bold' }}>행동 버튼 위의 '연타 시작!'을 누른 뒤,</Text>
