@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, Image } from 'react-native';
 import { router } from "expo-router";
 import { useState, useEffect } from 'react';
 
 const TIME_LIMIT = 5 * 1000;
+const imgUrl = 'https://i.imgur.com/aKUgTu7.png';
 
 export default function App() {
     const [completed, setCompleted] = useState(false);  // 3개 행동의 클릭을 모두 끝냈는지 여부
@@ -81,22 +82,35 @@ export default function App() {
         }
     );
 
+    // 소년기로의 성장분기
+    const grow = () => {
+        if(firstCount == secondCount && secondCount == thirdCount) {
+            router.navigate('childquiet');}
+        else if (firstCount == secondCount) {
+            router.navigate('childquiet');}
+        else if (firstCount == thirdCount) {
+            router.navigate('childsmart');}
+        else if (secondCount == thirdCount) {
+            router.navigate('childactive');}
+        else if (firstCount > secondCount && firstCount > thirdCount) {
+            router.navigate('childquiet');}
+        else if (secondCount > firstCount && secondCount > thirdCount) {
+            router.navigate('childactive');}
+        else router.navigate('childsmart');
+    };
+
     return (
         <View style = {styles.container}>
-            <Text>{startableOne.toString()} {startableTwo.toString()} {startableThree.toString()}</Text>
-            <Text>{clickableOne.toString()} {clickableTwo.toString()} {clickableThree.toString()}</Text>
-            <Text>{firstCount.toString()} {secondCount.toString()} {thirdCount.toString()}</Text>
-            <Text>{completed.toString()}</Text>
-            <View style = {{ height: 100, width: 200, backgroundColor: 'grey' }}>
-                <Text>- stage name -</Text>
+            <View style = {{ height: 100, width: 200}}>
+                <Text style = {{ textAlign: 'center', fontSize: 60, fontWeight: 'bold' }}>유아기</Text>
             </View>
             <View style = {{ height: 100, width: 300}}>
                 <Text style = {{ textAlign: 'center', fontWeight: 'bold' }}>행동 버튼 위의 '연타 시작!'을 누른 뒤,</Text>
                 <Text style = {{ textAlign: 'center', fontWeight: 'bold' }}>행동 버튼을 원하는 만큼 연타하세요!</Text>
             </View>
-            <View style = {{ height: 200, width: 200, backgroundColor: 'grey', margin: 10 }}>
-                <Text>- portrait -</Text>
-            </View>
+                <Image style = {{ height: 300, width: 300 }}
+                    src = {imgUrl}
+                />
             <View style = {styles.horizontal}>
                 <View style = {styles.container}>
                     {startableOne ?
@@ -150,7 +164,7 @@ export default function App() {
                         </TouchableOpacity>)
                         :
                         (<TouchableOpacity style = {styles.inactiveBtn}>
-                            <Text style = {styles.textst}>동요 불러주기</Text>
+                            <Text style = {styles.textst}>노래해주기</Text>
                         </TouchableOpacity>)
                     }
                 </View>
@@ -183,6 +197,17 @@ export default function App() {
                     }
                 </View>
             </View>
+            {completed ?
+                (<TouchableOpacity style = {styles.activeStart} onPress = {grow}>
+                    <Text style = {styles.textst}>성장하기</Text>
+                </TouchableOpacity>
+                )
+                :
+                (<TouchableOpacity style = {styles.inactiveStart}>
+                    <Text style = {styles.textst}>성장하기</Text>
+                </TouchableOpacity>
+                )
+            }
         </View>
     );
 }
@@ -195,7 +220,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
         },
     horizontal: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginTop: 20,
+        marginBottom: 30
         },
     activeStart: {
         width: 100,
@@ -212,14 +239,16 @@ const styles = StyleSheet.create({
         height: 80,
         width: 100,
         backgroundColor: 'black',
-        padding: 10
+        padding: 10,
+        justifyContent: 'center'
         },
     inactiveBtn: {
         margin: 10,
         height: 80,
         width: 100,
         backgroundColor: 'lightgrey',
-        padding: 10
+        padding: 10,
+        justifyContent: 'center'
         },
     textst: {
         textAlign: 'center',

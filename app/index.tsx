@@ -1,22 +1,21 @@
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, Image } from 'react-native';
 import { router } from "expo-router";
+
+const logoUrl = 'https://i.imgur.com/q7R4dsf.png';
+const portraitUrl = 'https://i.imgur.com/aKUgTu7.png';
 
 export default function Index() {
   return (
     <View style = {styles.container}>
-        <View style = {{ height: 100, width: 200, backgroundColor: 'grey' }}>
-            <Text>- logo -</Text>
-        </View>
-        <View style = {{ height: 200, width: 200, backgroundColor: 'grey', margin: 10 }}>
-            <Text>- portrait -</Text>
-        </View>
-        <TouchableOpacity onPress = { function() { router.navigate('game') } }
-         style = {{ height: 100, alignItems: 'center', justifyContent: 'center', width: 200, backgroundColor: 'grey' }}>
-            <Text style = {{ textAlign: 'center' }}>게임 시작</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress = { function() { router.navigate('result') } }
-         style = {{ height: 100, alignItems: 'center', justifyContent: 'center', width: 200, backgroundColor: 'grey' }}>
-            <Text style = {{ textAlign: 'center' }}>임시</Text>
+        <Image style = {{ height: 150, width: 300 }}
+            src = {logoUrl}
+        />
+        <Image style = {{ height: 300, width: 300 }}
+            src = {portraitUrl}
+        />
+        <TouchableOpacity onPress = { function() { router.navigate('baby') } }
+         style = {{ height: 100, alignItems: 'center', justifyContent: 'center', width: 200, backgroundColor: 'black', margin: 10, borderRadius: 100 }}>
+            <Text style = {{ textAlign: 'center', color: 'white', fontSize: 30, fontWeight: 'bold' }}>게임 시작</Text>
         </TouchableOpacity>
     </View>
   );
