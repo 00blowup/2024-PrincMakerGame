@@ -3,7 +3,7 @@ import { router } from "expo-router";
 import { useState, useEffect } from 'react';
 
 const TIME_LIMIT = 5 * 1000;
-const imgUrl = 'https://i.imgur.com/aKUgTu7.png';
+const imgUrl = 'https://i.imgur.com/qCpkzlq.png';
 
 export default function App() {
     const [completed, setCompleted] = useState(false);  // 3개 행동의 클릭을 모두 끝냈는지 여부
@@ -82,29 +82,29 @@ export default function App() {
         }
     );
 
-    // 소년기로의 성장분기
+    // 청년기로의 성장분기
     const grow = () => {
-        if(firstCount == secondCount && secondCount == thirdCount) {
-            router.navigate('childquiet');}
-        else if (firstCount > secondCount && firstCount > thirdCount) {
-            router.navigate('childquiet');}
-        else if (secondCount > firstCount && secondCount > thirdCount) {
-            router.navigate('childactive');}
-        else if (thirdCount > firstCount && thirdCount > secondCount) {
-            router.navigate('childsmart');}
-        else if (firstCount == secondCount) {
-            router.navigate('childquiet');}
-        else if (firstCount == thirdCount) {
-            router.navigate('childsmart');}
-        else if (secondCount == thirdCount) {
-            router.navigate('childactive');}
-        else router.navigate('childquiet');
+        if(firstCount == secondCount && secondCount == thirdCount)
+            router.navigate('youthmusic');
+        else if (firstCount > secondCount && firstCount > thirdCount)
+            router.navigate('youthmusic');
+        else if (secondCount > firstCount && secondCount > thirdCount)
+            router.navigate('youthsword');
+        else if (thirdCount > firstCount && thirdCount > secondCount)
+            router.navigate('youthsword');
+        else if (firstCount == secondCount)
+            router.navigate('youthmusic');
+        else if (firstCount == thirdCount)
+            router.navigate('youthmusic');
+        else if (secondCount == thirdCount)
+            router.navigate('youthsword');
+        else router.navigate('youthmusic');
     };
 
     return (
         <View style = {styles.container}>
             <View style = {{ height: 100}}>
-                <Text style = {{ textAlign: 'center', fontSize: 60, fontWeight: 'bold' }}>유아기</Text>
+                <Text style = {{ textAlign: 'center', fontSize: 60, fontWeight: 'bold' }}>활발한 소년</Text>
             </View>
             <View style = {{ height: 100, width: 300}}>
                 <Text style = {{ textAlign: 'center', fontWeight: 'bold' }}>행동 버튼 위의 '연타 시작!'을 누른 뒤,</Text>
@@ -138,7 +138,7 @@ export default function App() {
                         </TouchableOpacity>)
                         :
                         (<TouchableOpacity style = {styles.inactiveBtn}>
-                            <Text style = {styles.textst}>재우기</Text>
+                            <Text style = {styles.textst}>놀기</Text>
                         </TouchableOpacity>)
                     }
                 </View>
@@ -166,7 +166,7 @@ export default function App() {
                         </TouchableOpacity>)
                         :
                         (<TouchableOpacity style = {styles.inactiveBtn}>
-                            <Text style = {styles.textst}>노래해주기</Text>
+                            <Text style = {styles.textst}>공부하기</Text>
                         </TouchableOpacity>)
                     }
                 </View>
@@ -194,7 +194,7 @@ export default function App() {
                         </TouchableOpacity>)
                         :
                         (<TouchableOpacity style = {styles.inactiveBtn}>
-                            <Text style = {styles.textst}>책 읽어주기</Text>
+                            <Text style = {styles.textst}>훈련하기</Text>
                         </TouchableOpacity>)
                     }
                 </View>
