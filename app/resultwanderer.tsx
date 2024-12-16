@@ -27,7 +27,7 @@ export default function App() {
                 <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
                     <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
                 </View>
-                <View style = {{ height: 300, width: 300, marginTop: 20 }}>
+                <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>활발한 소년이었던 왕자는, 음악에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>최고의 음악가들을 초청하여 왕자의 견문을 넓혀주었습니다. 왕자는 아름다운 노래를 만들어 부르며, 당신을 웃게 해줍니다.</Text>
                     <Text>그러던 어느날, 정원을 거닐던 당신은 왜인지 쓸쓸한 표정을 짓는 왕자와 마주칩니다. 고민을 털어놓으라 말하자, 왕자는 좁은 궁 안에만 지내니 창작에 한계를 느낀다고 고백합니다.</Text>

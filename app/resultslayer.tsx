@@ -27,7 +27,7 @@ export default function App() {
                 <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
                     <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
                 </View>
-                <View style = {{ height: 300, width: 300, marginTop: 20 }}>
+                <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>활발한 소년이었던 왕자는, 무예에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>당신과 함께 전장을 누빈 최고의 장수들이 기꺼이 왕자의 스승이 되어주었습니다. 왕자는 뛰어난 전사로 성장합니다.</Text>
                     <Text>왕자는 침략이 잦은 국경으로 직접 나아가 수많은 적군의 목을 벱니다. 그 어떤 인간도 왕자의 칼날에 맞서지 못합니다.</Text>

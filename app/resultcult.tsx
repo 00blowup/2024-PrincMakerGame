@@ -27,7 +27,7 @@ export default function App() {
                 <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
                     <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
                 </View>
-                <View style = {{ height: 300, width: 300, marginTop: 20 }}>
+                <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>조용한 소년이었던 왕자는, 신학에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>저명한 성직자들이 왕자의 스승이 되어주었습니다. 그러나, 시간이 지날수록 성직자들에게서 우려의 목소리가 들려옵니다. 왕자의 견해가 성서의 가르침과 점점 멀어지고 있다는 것이었습니다.</Text>
                     <Text>어느 어두운 그믐날 밤, 왕자는 아무도 모르게 궁을 빠져나갔습니다.</Text>

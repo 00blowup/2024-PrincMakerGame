@@ -27,7 +27,7 @@ export default function App() {
                 <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
                     <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
                 </View>
-                <View style = {{ height: 300, width: 300, marginTop: 20 }}>
+                <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>영리한 소년이었던 왕자는, 마법학에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>타고난 강한 마력과 총명함으로 왕자의 마법 실력은 빠르게 성장합니다. 자연을 사랑하는 왕자였기에, 왕자는 자연의 섭리와 조화에 기반한 마법을 깊이 공부합니다.</Text>
                     <Text>마법을 배우는 이유가 무엇이냐고 왕자에게 묻자, 마법은 자연의 힘을 빌려오는 것이며, 이것에 감사하는 마음으로 모두의 유익을 위해 올바른 마법을 추구해야 한다고 답합니다.</Text>

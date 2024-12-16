@@ -27,7 +27,7 @@ export default function App() {
                 <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
                     <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
                 </View>
-                <View style = {{ height: 300, width: 300, marginTop: 20 }}>
+                <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>조용한 소년이었던 왕자는, 문학에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>책을 읽다 보면 시간이 가는 줄도 모릅니다. 해가 지면 그날 읽은 책에 대해 사유하며, 그 내용을 글로 남깁니다.</Text>
                     <Text>왕자의 학구열은 꺼질 줄을 모릅니다. 스무 번째 생일에는 금서로 지정된 책을 선물로 요청합니다. 정말 못말리는 책벌레입니다. 그렇게 웃어넘겼는데...</Text>

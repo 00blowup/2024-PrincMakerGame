@@ -27,7 +27,7 @@ export default function App() {
                 <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
                     <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
                 </View>
-                <View style = {{ height: 300, width: 300, marginTop: 20 }}>
+                <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>영리한 소년이었던 왕자는, 마법학에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>타고난 강한 마력과 총명함으로 왕자의 마법 실력은 빠르게 성장합니다. 호기심이 많은 왕자는 대마법사들이 알려준 내용 이외에도 다양한 실험을 해봅니다.</Text>
                     <Text>붉은 보름달이 뜬 어느 밤, 왕자는 여느 때처럼 실험적인 마법진을 그려보던 중이었습니다. 구름 사이에 숨어있던 달이 드러나 하늘을 눈부시게 비춘 순간, 왕자가 그린 마법진이 불길한 색채로 빛납니다.</Text>

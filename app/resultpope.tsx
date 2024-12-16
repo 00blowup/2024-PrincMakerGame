@@ -27,7 +27,7 @@ export default function App() {
                 <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
                     <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
                 </View>
-                <View style = {{ height: 300, width: 300, marginTop: 20 }}>
+                <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>조용한 소년이었던 왕자는, 신학에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>저명한 성직자들이 왕자의 스승이 되어주었습니다. 그들은 입을 모아 왕자의 온화한 성품과 깊은 신앙심을 칭송합니다.</Text>
                     <Text>왕자는 교황청의 일원이 되었고, 온 나라의 백성들에게 존경받는 인물로 자리잡았습니다.</Text>

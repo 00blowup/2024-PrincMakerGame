@@ -27,7 +27,7 @@ export default function App() {
                 <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
                     <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
                 </View>
-                <View style = {{ height: 300, width: 300, marginTop: 20 }}>
+                <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>영리한 소년이었던 왕자는, 제왕학에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>왕자의 총명함은 틀림없이 빛을 발하였지만, 고통받는 백성들의 삶에는 좀처럼 관심을 갖지 않습니다.</Text>
                     <Text>충분한 나이가 되자 왕자는 황제의 자리에 앉습니다. 모두의 축복 속에 즉위하였으나, 머지않아 왕자의 폭정이 시작됩니다.</Text>
