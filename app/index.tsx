@@ -13,7 +13,7 @@ export default function Index() {
         <Image style = {{ height: 300, width: 300 }}
             src = {portraitUrl}
         />
-        <TouchableOpacity onPress = { function() { router.navigate('baby') } }
+        <TouchableOpacity onPress = { function() { router.navigate('help') } }
          style = {{ height: 100, alignItems: 'center', justifyContent: 'center', width: 200, backgroundColor: 'black', margin: 10, borderRadius: 100 }}>
             <Text style = {{ textAlign: 'center', color: 'white', fontSize: 30, fontWeight: 'bold' }}>게임 시작</Text>
         </TouchableOpacity>
