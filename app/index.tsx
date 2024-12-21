@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { router } from "expo-router";
 
 const logoUrl = 'https://i.imgur.com/q7R4dsf.png';
@@ -16,6 +16,10 @@ export default function Index() {
         <TouchableOpacity onPress = { function() { router.navigate('baby') } }
          style = {{ height: 100, alignItems: 'center', justifyContent: 'center', width: 200, backgroundColor: 'black', margin: 10, borderRadius: 100 }}>
             <Text style = {{ textAlign: 'center', color: 'white', fontSize: 30, fontWeight: 'bold' }}>게임 시작</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress = { function() { router.navigate('credit') } }
+         style = {{ height: 50, alignItems: 'center', justifyContent: 'center', width: 200, backgroundColor: 'black', margin: 10, borderRadius: 100 }}>
+            <Text style = {{ textAlign: 'center', color: 'white', fontSize: 15, fontWeight: 'bold' }}>CREDIT</Text>
         </TouchableOpacity>
     </View>
   );
