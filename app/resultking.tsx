@@ -1,6 +1,8 @@
-import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { router } from "expo-router";
 import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+
+const imgUrl = 'https://i.imgur.com/xokfPty.png';
 
 export default function App() {
     return (
@@ -24,14 +26,14 @@ export default function App() {
                         <Text style = {{ textAlign: 'center', color: 'white', fontSize: 20, fontWeight: 'bold' }}>타이틀로</Text>
                     </TouchableOpacity>
                 </View>
-                <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
-                    <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
-                </View>
+                <Image style = {{ height: 500, width: 300 }}
+                    src = {imgUrl}
+                />
                 <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>영리한 소년이었던 왕자는, 제왕학에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
-                    <Text>똑똑하기만 한 것이 아닌, 백성을 사랑할 줄 아는 진정한 군주의 모습을 갖추어나갑니다.</Text>
-                    <Text>그러던 어느날, 정원을 거닐던 당신은 왜인지 쓸쓸한 표정을 짓는 왕자와 마주칩니다. 고민을 털어놓으라 말하자, 왕자는 좁은 궁 안에만 지내니 창작에 한계를 느낀다고 고백합니다.</Text>
-                    <Text>그 대화를 나눈 지 일주일 정도 되었을 때, 왕자는 운율에 맞추어 쓴 애정 어린 작별편지를 남기고 홀연히 넓은 세상으로 떠납니다. 어릴 적부터 연주해온 작은 류트 하나만을 든 채로...</Text>
+                    <Text>지식과 지혜의 깊이는 하루가 다르게 무르익어갑니다.</Text>
+                    <Text>충분히 나이가 들자 왕자는 모두의 축복 속에 왕위에 오릅니다.</Text>
+                    <Text>탐관오리들을 일거에 숙청하는 단호한 모습과 백성을 사랑하는 따뜻한 성품을 모두 보여줍니다. 새 왕의 시대를 온 나라가 기쁨으로 칭송합니다.</Text>
                 </View>
             </View>
           </ScrollView>

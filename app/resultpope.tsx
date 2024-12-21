@@ -1,6 +1,8 @@
-import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { router } from "expo-router";
 import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+
+const imgUrl = 'https://i.imgur.com/NeSqJ6K.png';
 
 export default function App() {
     return (
@@ -24,14 +26,14 @@ export default function App() {
                         <Text style = {{ textAlign: 'center', color: 'white', fontSize: 20, fontWeight: 'bold' }}>타이틀로</Text>
                     </TouchableOpacity>
                 </View>
-                <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
-                    <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
-                </View>
+                <Image style = {{ height: 500, width: 300 }}
+                    src = {imgUrl}
+                />
                 <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>조용한 소년이었던 왕자는, 신학에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>저명한 성직자들이 왕자의 스승이 되어주었습니다. 그들은 입을 모아 왕자의 온화한 성품과 깊은 신앙심을 칭송합니다.</Text>
-                    <Text>왕자는 교황청의 일원이 되었고, 온 나라의 백성들에게 존경받는 인물로 자리잡았습니다.</Text>
-                    <Text>쌓이는 지혜만큼 왕자의 머리칼이 희끗해지고, 백성들에게 지은 미소만큼 주름이 패일 무렵, 왕자는 모두의 지지를 받으며 교황으로 추대됩니다.</Text>
+                    <Text>왕자는 교황청의 일원이 되었고, 온 나라의 백성들에게 존경받는 성직자로 자리잡았습니다.</Text>
+                    <Text>전쟁 이후 공석이었던 교황의 자리를 더이상 비워놓을 수 없다는 중신들의 조언이 계속됩니다. 논의 끝에, 왕자는 모두의 지지를 받으며 교황으로 추대됩니다.</Text>
                 </View>
             </View>
           </ScrollView>

@@ -1,6 +1,8 @@
-import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { router } from "expo-router";
 import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+
+const imgUrl = 'https://i.imgur.com/zea3eSp.png';
 
 export default function App() {
     return (
@@ -24,9 +26,9 @@ export default function App() {
                         <Text style = {{ textAlign: 'center', color: 'white', fontSize: 20, fontWeight: 'bold' }}>타이틀로</Text>
                     </TouchableOpacity>
                 </View>
-                <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
-                    <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
-                </View>
+                <Image style = {{ height: 500, width: 300 }}
+                    src = {imgUrl}
+                />
                 <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>활발한 소년이었던 왕자는, 음악에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>최고의 음악가들을 초청하여 왕자의 견문을 넓혀주었습니다. 왕자는 아름다운 노래를 만들어 부르며, 당신을 웃게 해줍니다.</Text>

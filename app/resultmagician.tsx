@@ -1,6 +1,8 @@
-import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { router } from "expo-router";
 import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+
+const imgUrl = 'https://i.imgur.com/NvuLDo3.png';
 
 export default function App() {
     return (
@@ -24,15 +26,15 @@ export default function App() {
                         <Text style = {{ textAlign: 'center', color: 'white', fontSize: 20, fontWeight: 'bold' }}>타이틀로</Text>
                     </TouchableOpacity>
                 </View>
-                <View style = {{ height: 500, width: 300, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center' }}>
-                    <Text style = {{ textAlign: 'center' }}>- 결과 일러스트 영역 -</Text>
-                </View>
+                <Image style = {{ height: 500, width: 300 }}
+                    src = {imgUrl}
+                />
                 <View style = {{ width: 300, marginTop: 20, marginBottom: 50 }}>
                     <Text>영리한 소년이었던 왕자는, 마법학에 깊은 관심을 가진 청년으로 자라났습니다.</Text>
                     <Text>타고난 강한 마력과 총명함으로 왕자의 마법 실력은 빠르게 성장합니다. 자연을 사랑하는 왕자였기에, 왕자는 자연의 섭리와 조화에 기반한 마법을 깊이 공부합니다.</Text>
-                    <Text>마법을 배우는 이유가 무엇이냐고 왕자에게 묻자, 마법은 자연의 힘을 빌려오는 것이며, 이것에 감사하는 마음으로 모두의 유익을 위해 올바른 마법을 추구해야 한다고 답합니다.</Text>
-                    <Text>왕자는 왕실 마법사들의 총애를 받으며 성장합니다. 긴 시간이 흘러 왕국의 위대한 대마법사가 죽음을 앞두게 되었습니다. 대마법사는 왕자를 곁으로 불러, 자신의 뒤를 이어주기를 부탁합니다.</Text>
-                    <Text>대마법사가 된 왕자는 모든 마법사들의 존경의 대상이자, 마법학의 빛나는 발전을 이루어가는 위인으로 평가받습니다.</Text>
+                    <Text>자연을 이루는 요소인 공기, 물, 불, 땅을 자유자재로 다루는 뛰어난 마법사가 되었습니다.</Text>
+                    <Text>긴 시간이 흘러 왕국의 위대한 대마법사가 죽음을 앞두게 되었습니다. 대마법사는 왕자를 곁으로 불러, 자신의 뒤를 이어주라고 부탁합니다.</Text>
+                    <Text>대마법사가 된 후에도 왕자의 온화한 품성은 빛을 발합니다. 나이가 무색하게 후배들과 스스럼없이 장난을 주고받습니다. 그런 그를 모두가 사랑합니다.</Text>
                 </View>
             </View>
           </ScrollView>

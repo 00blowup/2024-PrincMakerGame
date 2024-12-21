@@ -110,9 +110,9 @@ export default function App() {
                 <Text style = {{ textAlign: 'center', fontWeight: 'bold' }}>행동 버튼 위의 '연타 시작!'을 누른 뒤,</Text>
                 <Text style = {{ textAlign: 'center', fontWeight: 'bold' }}>행동 버튼을 원하는 만큼 연타하세요!</Text>
             </View>
-                <Image style = {{ height: 300, width: 300 }}
-                    src = {imgUrl}
-                />
+            <Image style = {{ height: 300, width: 300 }}
+                src = {imgUrl}
+            />
             <View style = {styles.horizontal}>
                 <View style = {styles.container}>
                     {startableOne ?
